@@ -41,6 +41,7 @@ class ResponsiveTester:
     def start(self):
         for url in self.urls:
             self.screenshot(url)
+        self.browser.quit()
 
 
 tester = ResponsiveTester(["https://allforyoung.com"])
